@@ -1,0 +1,128 @@
+li.nav-item:hover {
+    background: #192b40;
+}
+li.nav-item.has-treeview ul.nav-treeview li.nav-item:hover {
+    background: #132132;
+}
+nav.main-header ul li.nav-item:hover {
+    background: #0000;
+}
+ul.user-role-list{
+    list-style: none;
+}
+.list_module {flex-basis: 35%; margin-top: 7px;}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #d1d8df;
+}
+
+/* switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 23px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 7px;
+    left: 4px;
+    right: -4px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  
+  }
+
+  .switch input:checked + .slider {
+    background-color: #3272a5;
+  }
+  
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+.switch .slider.round {
+    border-radius: 34px;
+  }
+  
+  .switch .slider.round:before {
+    border-radius: 50%;
+  }
+  label.switch span.text {
+    position: absolute;
+    z-index: 10;
+    top: 2px;
+    left: -45px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+/* invoice table start */
+.content-table {
+  border-collapse: collapse;
+  margin: 50px 0;
+  font-size: 0.9em;
+  min-width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+/* invoice table end */
